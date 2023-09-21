@@ -1,0 +1,57 @@
+# This file configures the analyzer, which statically analyzes Dart code to
+# check for errors, warnings, and lints.
+#
+# The issues identified by the analyzer are surfaced in the UI of Dart-enabled
+# IDEs (https://dart.dev/tools#ides-and-editors). The analyzer can also be
+# invoked from the command line by running `flutter analyze`.
+
+# The following line activates a set of recommended lints for Flutter apps,
+# packages, and plugins designed to encourage good coding practices.
+include: package:flutter_lints/flutter.yaml
+
+
+  # The lint rules applied to this project can be customized in the
+  # section below to disable rules from the `package:flutter_lints/flutter.yaml`
+  # included above or to enable additional rules. A list of all available lints
+  # and their documentation is published at
+  # https://dart-lang.github.io/linter/lints/index.html.
+  #
+  # Instead of disabling a lint rule for the entire project in the
+  # section below, it can also be suppressed for a single line of code
+  # or a specific dart file by using the `// ignore: name_of_lint` and
+  # `// ignore_for_file: name_of_lint` syntax on the line or in the file
+  # producing the lint.
+linter:
+  rules:
+    # camel_case_types: true # Enforce UpperCamelCase for type names.
+    # constant_identifier_names: true # Enforce SCREAMING_SNAKE_CASE for constants.
+    # avoid_shadowing_type_parameters: true # Avoid shadowing type parameters.
+    # prefer_single_quotes: true # Prefer single quotes for string literals.
+    # always_declare_return_types: true # Always declare return types for functions.
+    # prefer_final_fields: true # Prefer final fields when they can be.
+    # prefer_const_constructors: true # Prefer const constructors when possible.
+    # always_require_non_null_named_parameters: true # Require non-null named parameters.
+    # prefer_asserts_in_initializer_lists: true # Prefer asserts in initializer lists.
+    # avoid_classes_with_only_static_members: true # Avoid classes with only static members.
+    # avoid_catches_without_on_clauses: true # Avoid catching errors without an 'on' clause.
+    # avoid_empty_else: true # Avoid empty 'else' statements.
+    # avoid_function_literals_in_foreach_calls: true # Avoid function literals in 'forEach' calls.
+    # avoid_types_as_parameter_names: true # Avoid using types as parameter names.
+    # avoid_unused_constructor_parameters: true # Avoid unused constructor parameters.
+    # avoid_void_async: true # Avoid using 'void' as the return type for asynchronous functions.
+    # prefer_function_declarations_over_variables: true # Prefer function declarations over variables.
+    # sort_child_properties_last: true # Sort child properties last when building widgets.
+    # always_use_package_imports: true
+    # avoid_print: true  # Uncomment to disable the `avoid_print` rule
+    # always_put_control_body_on_new_line: true
+    
+    cancel_subscriptions: true
+    control_flow_in_finally: true
+    empty_statements: true
+    hash_and_equals: true
+    file_names: true
+
+analyzer:
+  exclude:
+    - "**/*.g.dart" # Exclude generated files from analysis.
+    - "**/*.freezed.dart" # Exclude freezed generated files.
