@@ -20,7 +20,7 @@ class _LandingScreenState extends State<LandingScreen> {
   Future<void> init() async {
     if (Get.currentRoute == '') {
       Future.delayed(
-          const Duration(seconds: 4), () => Get.offAndToNamed('/home'));
+          const Duration(seconds: 5), () => Get.offAndToNamed('/tour'));
     }
   }
 
